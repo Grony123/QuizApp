@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/backgound"
+    android:orientation="vertical"
+    tools:context=".LoginStudent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:gravity="center_horizontal"
+        android:text="Log In (Student)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="User Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:id="@+id/login_emailFS"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/white"
+        android:id="@+id/login_passwordFS"
+        android:backgroundTint="@color/white"/>
+
+    <CheckBox
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:buttonTint="@color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkboxLoginS"
+        android:textColor="@color/white"
+        android:layout_marginRight="70dp"/>
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/teal_700"
+        android:text="Log in"
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_loginFS"/>
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#30ffffff"
+        android:textColor="@color/white"
+        android:text="Register"
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_registerFS"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_progressBarS"
+        android:indeterminateTint="@color/white"
+        android:indeterminate="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

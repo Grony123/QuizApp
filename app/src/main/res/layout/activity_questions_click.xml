@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuestionsClick">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tap to Add Image"
+            android:gravity="center"
+            android:textSize="30sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/QuestionImageB" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/QuestionTextB"
+        android:textSize="20sp"
+        android:hint="Add Question here"/>
+
+    <RadioGroup
+        android:id="@+id/group_of_radiosB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radioA_Q"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Add Answer"/>
+        <RadioButton
+            android:id="@+id/radioB_Q"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Add Answer"/>
+        <RadioButton
+            android:id="@+id/radioC_Q"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Add Answer"/>
+        <RadioButton
+            android:id="@+id/radioD_Q"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Add Answer"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Options"
+        android:id="@+id/updateOptions"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/updateQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

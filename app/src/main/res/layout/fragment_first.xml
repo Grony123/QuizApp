@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstFragment">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/QuizTitle"
+        android:textSize="20sp"
+        android:hint="Add Title here"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/QuizDescription"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"
+        android:hint="Add Description"/>
+    <Button
+        android:id="@+id/Add_Questions_to_Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Questions" />
+
+
+</LinearLayout>
